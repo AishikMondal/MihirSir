@@ -5,14 +5,179 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Creepster&family=Oleo+Script+Swash+Caps:wght@400;700&family=Press+Start+2P&family=Satisfy&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    
+
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>MIHIR SIR's Birthday</title>
 </head>
 <body>
-    
+<style>
+  *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  body{
+     /* background-color: antiquewhite;  */
+    /* background-image: url(https://img.freepik.com/free-vector/pastel-balloons-background-happy-birthday-card_25819-578.jpg?w=200); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: #c8ff75;
+  }
+  .hbd{
+    text-shadow: 5px 3px 2px hotpink;
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 3px;
+    word-spacing: 2px;
+    color: rgba(1, 255, 230, 1);
+    text-shadow: 2px 2px 4px #da4bce;
+    border: 3px rgba(89, 255, 1, 1) dotted ;
+    border-radius: 55px 54px 10px 10px;
+    animation: blink 3s;
+    animation-iteration-count: infinite;
+  }
+  .name{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+
+    justify-content: center;
+    margin-top: 5px;
+    color: #00ffb3;
+    font-weight: 900;
+    font-size: 7vw;
+
+    animation: beat 1.5s infinite alternate;
+
+
+
+  }
+  .strong{
+    color: rgba(26, 1, 255, 1);
+    animation: glow 3s linear infinite;
+    text-shadow:
+      0 0 7px #647EFF,
+      0 0 10px rgb(7, 71, 151),
+      0 0 21px rgba(62, 53, 144),
+      0 0 42px rgb(24, 72, 230),
+      0 0 82px rgb(17, 72, 172),
+      0 0 92px rgb(10, 51, 173),
+      0 0 102px rgba(26, 1, 255, 0.87),
+      0 0 151px rgb(34, 63, 263);
+  }
+
+  img{
+    height:40vh;
+    width:80vw;
+    border-radius: 30%;;
+    box-shadow: 3px 2px 1px #fff;
+    border: 3px solid #0f0;
+  }
+  .img{
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+    }
+
+  .msg{
+  color: whitesmoke;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #aba6a6;
+    opacity: 0.8;
+    font-size: 17px;
+    height: auto;
+    width:auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    animation:  shine 2s infinite;
+   font-family: 'Pacifico', cursive;
+     /*font-family: 'Fascinate', cursive;*/
+
+  }
+  .poem{
+  background-image: linear-gradient(90deg,red,blue);
+  background-clip: text;
+  color: black;
+  margin: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  }
+  footer{
+    color:green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    bottom: 2px;
+    margin-top: 20px;
+    left: 10px;
+  }
+  a{
+    text-decoration: none;
+  }
+  button{
+  background-color: #262626;
+  text-decoration: underline;
+  color: #00f;
+  margin: 10px;
+  padding: 5px
+  }
+  #more{
+  display: none;
+  }
+  .noneclass{
+  display: inline;
+  }
+  @keyframes blink { 50% { border-color: #ff0000; }  }
+
+  @keyframes beat {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes shine{
+    30%{
+        border-image: linear-gradient(10deg,#f00,#0f0,#00f,#ff0,#0ff,#f0f);
+        border-image-slice: 1;
+    }
+    60%{
+        border-image: linear-gradient(45deg,#f00,#0f0,#00f,#ff0,#0ff,#f0f);
+        border-image-slice: 1;
+    }
+    0%{
+        border-image: linear-gradient(-45deg,#f00,#0f0,#00f,#ff0,#0ff,#f0f);
+        border-image-slice: 1;
+    }
+    100%{
+        border-image: linear-gradient(90deg,#f00,#0f0,#00f,#ff0,#0ff,#f0f);
+        border-image-slice: 1;
+    }
+  }
+</style>
     <div class="hbd">
         <div class="happy"><h2>Happy</h2></div><br>
         <div class="bday"><h2>Birthday</h2></div>
@@ -21,14 +186,16 @@
     <div class="name"> 
         <h1 class="sri"><strong class="strong">MIHIR SIR</strong></h1>
     </div>
-   
+
     <div class="img">
-        <img src="pic.jpg" alt="" srcset="">
+        <img src="https://aishikmondal.github.io/MihirSir/pic.jpg" alt="" srcset="">
     </div>
 
 <div class="msg">
-  Very Very Warm Greetings On Your Birthday Dear Mihir Sir 😊🎂 . I'm really grateful and lucky to get a opportunity to meet a teacher like you ☺️ .You guided me through the pandemic time when being at home i dont had any passion and hobby to persue .Here Comes Your Blessing ,You opened the door of the world of programming to me and since then i came to know  what my passion is . Thank You 💗 So Much Sir for Giving My Life A Fruitful Direction . You guided me Through the Hardest Time Of My Life .I will be hardly successful without you and your guidance 😉. I Wish i will get you by my side everytime when i need your help and support to bounce back .Any Combination of 26 Alphabets are not enough to describe your eminence and significance in my life 
   
+  Happy Birthday to the Code Maestro, Mihir Sir! 🎉🎂 Your guidance introduced me to the captivating world of coding, igniting a passion that has become my driving force. 🚀 Thank you for your unwavering support, mentorship, and for being the catalyst that led me to discover my true calling. 🙏 Your endless greatness in the realm of programming is truly inspiring, and I'm profoundly grateful for your influence in shaping my journey. 🌟 Here's to a day as exceptional as your coding expertise, and to many more years of your invaluable guidance. 🥳
+
+  "As a programmer, it is your job to put yourself out of business. What you do today can be automated tomorrow." - Doug McIlroy
  <p><strong class="poem">Though You have a busy schedule regularly yet i hope you will enjoy your day , Be Cheerful Be Elegent May You Live Longer , and Live as a shade above us.❤️🥰🤩🎈🎉 ,<br> Thank You So Much Sir again a very happy birthday to you Dear Mihir Sir </strong></p><p>-              Your's Sincerely Aishik</p></span> <button onclick="myFunction()" id="Btn">Read more</button>
 </div>
 <footer>
